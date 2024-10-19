@@ -2,7 +2,6 @@
   "name": "react-ep4---project",
   "version": "1.0.0",
   "description": "/**\r  * Header\r  *  - Logo\r  *  - Nav items\r  * \r  * Body\r  *  - Search\r  *  - RestaurantContainer\r  *      -RestaurantCard\r  * \r  * Footer\r  *  -Copyright\r  *  -Links\r  *  -Address\r  *  -Contact\r  * \r  */",
-  
   "scripts": {
     "test": "jest",
     "start": "parcel index.html",
@@ -12,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@reduxjs/toolkit": "^2.2.8",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
