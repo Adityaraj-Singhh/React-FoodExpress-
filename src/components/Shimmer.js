@@ -4,7 +4,7 @@ const Shimmer = () => {
         {Array(10).fill("").map((_, index) => (
           <div 
             key={index} 
-            className="shimmer-card animate-pulse bg-gray-200 w-[300px] h-[360px] 
+            className="shimmer-card animate-pulse bg-gray-200 w-[314px] h-[360px] 
                        rounded-xl shadow-md border border-gray-200"
           >
             <div className="h-[220px] bg-gray-300 rounded-t-xl"></div>
