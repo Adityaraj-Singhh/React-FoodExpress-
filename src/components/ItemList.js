@@ -3,6 +3,7 @@ import { addItem } from "../utils/cartSlice";
 import { CDN_URL } from "../utils/constants";
 
 
+
 const ItemList = ({items,dummy})=>{
     // console.log(dummy);//this dummy is coming from ResMenu->.. ResMenu -> ResCategory -> ItemList | -> This concept is known as props drilling.
 
@@ -71,6 +72,7 @@ const ItemList = ({items,dummy})=>{
                 >
                   Add
                 </button>
+              
               </div>
             </div>
           ))}

@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import ItemList from "./ItemList";
 import { clearCart } from "../utils/cartSlice";
+import { removeItem } from "../utils/cartSlice";
 
 const Cart = ()=>{
 
@@ -15,6 +16,9 @@ const Cart = ()=>{
 
     const handleClearCart = () =>{
         dispatch(clearCart())
+    }
+    const handlePopCart = () =>{
+      dispatch(removeItem())
     }
 
     // return (<div className="text-center m-4 p-4">
@@ -44,6 +48,17 @@ const Cart = ()=>{
                 Clear Cart
               </button>
             </div>
+
+            <div className="flex justify-center mb-4">
+              <button
+                className="px-5 py-2 bg-blue-300 text-white font-semibold rounded-lg hover:bg-blue-400 transition-all"
+                onClick={handlePopCart}
+              >
+                Remove last item
+              </button>
+            </div>
+            
+
       
             {/* Empty Cart Message */}
             {cartItems.length === 0 ? (

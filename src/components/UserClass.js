@@ -14,7 +14,7 @@ class UserClass extends React.Component{
                 avatar_url:"Dummy photo"
             }
         }
-       console.log(this.props.name+"Child Constructor called");
+    //    console.log(this.props.name+"Child Constructor called");
     }
 
    async componentDidMount(){
@@ -29,16 +29,16 @@ class UserClass extends React.Component{
     }
 
     componentDidUpdate(){
-        console.log("Componenet did update");
+        // console.log("Componenet did update");
     }
 
     componentWillUnmount(){
-        console.log("Component will unmount"); //this is called when we go to different sections.
+        // console.log("Component will unmount"); //this is called when we go to different sections.
     }
 
     render(){
 
-        console.log(this.props.name+"Child render called");
+        // console.log(this.props.name+"Child render called");
         // const {count} = this.state;
 
         const {name,location,avatar_url}=this.state.userInfo;
